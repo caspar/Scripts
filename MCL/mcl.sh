@@ -14,7 +14,7 @@ echo ""
 # EXPERIMETAL: if only one parameter ($2 = null?), just cd & ls dir.
 # form:
 
-if [ $2 != 0 ]; then
+if [ -n "$2" ]; then
 mv $1 ./$2
 fi
 

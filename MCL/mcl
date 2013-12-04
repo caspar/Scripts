@@ -1,4 +1,6 @@
-#   Caspar Lant
+#! /bin/bash
+
+#Caspar Lant
 #
 #   mcl  --  Move, Change, List
 #
@@ -6,10 +8,19 @@
 #  
 #   Invoke using $. mcl <filename> <directory>
 
-echo "Move, Change, List" -- $(pwd)
-echo ""
+echo "Move, Change, List" -- $(pwd) # feel free to comment 
+echo ""                             # these out.
 
-mv $1 ./$2
+
+if [ -n "$2" ]; then 
+    mv $1 ./$2
+    # ie, if only one parameter is given (dir), 
+    # just cd into it & list its contents
+fi
+
+# mv $1 ./$2
 cd ./$2
-ls 
+ls -a #--> modify this if you don't want to see '.'s.
+      #--> coming soon: option for 3rd parameter to specify ls options
+      #--> implementation is simple, but I want error messages/implementation rules
 cd $(pwd)
