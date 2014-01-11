@@ -9,6 +9,7 @@ alias lst='ls -t'
 alias CL=cl
 alias ql='qlmanage -p'
 alias cp='rsync -r -v --progress'
+alias numitems='ls | wc -l'
 
 #### MISC ####
 alias please="sudo !!" 
