@@ -3,6 +3,7 @@ alias ..='cd ..'
 alias cd..='cd ..'
 alias p='playing'
 alias l='ls'
+alias ls='ls --color'
 alias rm='rm -i'
 alias cl=clear
 alias lst='ls -t'
@@ -11,9 +12,15 @@ alias ql='qlmanage -p'
 alias cp='rsync -r -v --progress'
 alias numitems='ls | wc -l'
 
+#### APCS ###
+alias compilegrid='javac -cp .:GridWorldCode/gridworld.jar  XBug1Runner.java'
+alias rungrid='java -cp .:./GridWorldCode/gridworld.jar  XBug1Runner'
+#############
+
 #### MISC ####
-alias please="sudo !!" 
-alias hosts='sudo $EDITOR /etc/hosts' 
+alias please="sudo" 
+alias hosts='sudo $ED
+ITOR /etc/hosts' 
 alias sshconfig='$EDITOR ~/.ssh/config' 
 alias currentwifi="networksetup -getairportnetwork en0" 
 alias stfu="osascript -e 'set volume output muted true'" 
