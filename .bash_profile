@@ -1,17 +1,20 @@
+#### LAZINESS ###
 alias .=.
 alias ..='cd ..'
 alias cd..='cd ..'
-alias p='playing'
+alias mv='mv -v' #verbose
 alias l='ls'
+alias ls='ls -G' #color
 alias rm='rm -i'
 alias cl=clear
 alias lst='ls -t'
-alias CL=cl
-alias ql='qlmanage -p'
-alias cp='rsync -r -v --progress'
-alias numitems='ls $1 | wc -l'
-alias size='ls -l | grep -v -'
+alias ql='qlmanage -p' #quick look
+alias cp='rsync -r -v --progress' #verbose
+alias numitems='ls $1 | wc -l' #outputs number of items in a directory or lines in a file. 
+alias size='ls -l | grep -v -' 
 alias incept='emacs ~/.bash_profile'
+
+
 alias disk='echo "" ; df -h | grep -e /dev/ -e Filesystem ; echo "" '
 alias aqua='open -a /Applications/Aquamacs.app " ./$1 "" '
 alias tree="find .; -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g' "
@@ -24,7 +27,6 @@ alias currentwifi="networksetup -getairportnetwork en0"
 alias stfu="osascript -e 'set volume output muted true'"
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 alias rungrid='java -cp .:./GridWorldCode/gridworld.jar XBug1Runner'
-alias ls='ls -G'
 ##############
 
 ### for fun ###
